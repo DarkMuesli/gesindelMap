@@ -7,9 +7,21 @@
         html, body, #osm-map {
             height: 100%;
         }
+
         .leaflet-popup-content-wrapper {
             font-weight: bold;
             font-size: 20pt;
+        }
+
+        #search {
+            position: absolute;
+            top: 20px;
+            left: 70px;
+            z-index: 1000;
+            padding: 8px 12px;
+            font-size: 14pt;
+            border-radius: 4px;
+            border: 1px solid #999;
         }
     </style>
 </head>
@@ -17,7 +29,9 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+
+<input type="text" id="search" placeholder="Waschbär suchen ..."/>
 <div id="osm-map"></div>
-<script src="index.js" defer></script>
+<script src="index.js?v=2" defer></script>
 </body>
 </html>
